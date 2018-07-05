@@ -1,0 +1,2550 @@
+[8932][environment] CWD = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[8932][environment] No .inferconfig file found
+[8932][environment] Project root = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[8932][environment] INFER_ARGS =   @/tmp/args.tmp.46449c
+[8932][environment]   ++Contents of '/tmp/args.tmp.46449c':
+[8932][environment]     run --liveness
+[8932][environment]   
+[8932][environment] command line arguments:   infer run --liveness -- make
+[8932][environment] Analyzer: checkers
+[8932][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[8932][environment] Infer log identifier is 
+Infer version v0.14.0
+[8932][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[8932][environment] 
+[8932][   progress] Capturing in make/cc mode...
+[8932][environment] Running command make with env:
+[8932][environment] XDG_VTNR=7
+[8932][environment] CAML_LD_LIBRARY_PATH=/home/osboxes/.opam/infer-4.06.1+flambda/lib/stublibs
+[8932][environment] MANPATH=:/home/osboxes/.opam/infer-4.06.1+flambda/man:/home/osboxes/.opam/infer-4.06.1+flambda/man
+[8932][environment] XDG_SESSION_ID=c2
+[8932][environment] XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/osboxes
+[8932][environment] CLUTTER_IM_MODULE=xim
+[8932][environment] SESSION=ubuntu
+[8932][environment] GPG_AGENT_INFO=/home/osboxes/.gnupg/S.gpg-agent:0:1
+[8932][environment] XDG_MENU_PREFIX=gnome-
+[8932][environment] TERM=screen
+[8932][environment] SHELL=/bin/bash
+[8932][environment] VTE_VERSION=4205
+[8932][environment] PERL5LIB=/home/osboxes/.opam/infer-4.06.1+flambda/lib/perl5:/home/osboxes/.opam/infer-4.06.1+flambda/lib/perl5:
+[8932][environment] QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+[8932][environment] WINDOWID=62914570
+[8932][environment] GNOME_KEYRING_CONTROL=
+[8932][environment] UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1359
+[8932][environment] GTK_MODULES=gail:atk-bridge:unity-gtk-module
+[8932][environment] OCAML_TOPLEVEL_PATH=/home/osboxes/.opam/infer-4.06.1+flambda/lib/toplevel
+[8932][environment] USER=osboxes
+[8932][environment] LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+[8932][environment] QT_ACCESSIBILITY=1
+[8932][environment] XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+[8932][environment] UNITY_HAS_3D_SUPPORT=true
+[8932][environment] XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+[8932][environment] SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+[8932][environment] SESSION_MANAGER=local/osboxes:@/tmp/.ICE-unix/2450,unix/osboxes:/tmp/.ICE-unix/2450
+[8932][environment] DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
+[8932][environment] TMUX=/tmp/tmux-1000/default,26754,0
+[8932][environment] XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+[8932][environment] UNITY_DEFAULT_PROFILE=unity
+[8932][environment] DESKTOP_SESSION=ubuntu
+[8932][environment] QT_IM_MODULE=ibus
+[8932][environment] QT_QPA_PLATFORMTHEME=appmenu-qt5
+[8932][environment] EVENT_NOEPOLL=1
+[8932][environment] XDG_SESSION_TYPE=x11
+[8932][environment] JOB=unity-settings-daemon
+[8932][environment] PWD=/home/osboxes/experiments/sqlite-version-3.6.10/bld
+[8932][environment] XMODIFIERS=@im=ibus
+[8932][environment] GNOME_KEYRING_PID=
+[8932][environment] LANG=en_US.UTF-8
+[8932][environment] GDM_LANG=en_US
+[8932][environment] MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path
+[8932][environment] TMUX_PANE=%5
+[8932][environment] COMPIZ_CONFIG_PROFILE=ubuntu
+[8932][environment] IM_CONFIG_PHASE=1
+[8932][environment] GDMSESSION=ubuntu
+[8932][environment] GTK2_MODULES=overlay-scrollbar
+[8932][environment] SESSIONTYPE=gnome-session
+[8932][environment] HOME=/home/osboxes
+[8932][environment] XDG_SEAT=seat0
+[8932][environment] SHLVL=2
+[8932][environment] LANGUAGE=en_US
+[8932][environment] GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+[8932][environment] UPSTART_INSTANCE=
+[8932][environment] XDG_SESSION_DESKTOP=ubuntu
+[8932][environment] LOGNAME=osboxes
+[8932][environment] UPSTART_EVENTS=xsession started
+[8932][environment] COMPIZ_BIN_PATH=/usr/bin/
+[8932][environment] QT4_IM_MODULE=xim
+[8932][environment] DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-zYmrU5HoTU
+[8932][environment] XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+[8932][environment] LESSOPEN=| /usr/bin/lesspipe %s
+[8932][environment] UPSTART_JOB=unity7
+[8932][environment] INSTANCE=
+[8932][environment] DISPLAY=:0
+[8932][environment] XDG_RUNTIME_DIR=/run/user/1000
+[8932][environment] GTK_IM_MODULE=ibus
+[8932][environment] XDG_CURRENT_DESKTOP=Unity
+[8932][environment] LESSCLOSE=/usr/bin/lesspipe %s %s
+[8932][environment] XAUTHORITY=/home/osboxes/.Xauthority
+[8932][environment] _=/home/osboxes/infer/infer-linux64-v0.14.0/infer/bin/infer
+[8932][environment] OLDPWD=/home/osboxes/experiments/sqlite-version-3.6.10
+[8932][environment] INFER_CWD=/home/osboxes/experiments/sqlite-version-3.6.10/bld
+[8932][environment] INFER_ARGS=@/tmp/args.tmp.46449c
+[8932][environment] INFER_TOP_RESULTS_DIR=/home/osboxes/experiments/sqlite-version-3.6.10/bld/infer-out
+[8932][environment] NO_BUCKD=1
+[8932][environment] PATH=/home/osboxes/infer/infer-linux64-v0.14.0/infer/bin/../lib/wrappers:/home/osboxes/infer/infer-linux64-v0.14.0/infer/bin:/home/osboxes/infer/infer-linux64-v0.14.0/infer/bin:/home/osboxes/.opam/infer-4.06.1+flambda/bin:/home/osboxes/bin:/home/osboxes/.local/bin:/home/osboxes/infer/infer-linux64-v0.14.0/infer/bin:/home/osboxes/infer/infer-linux64-v0.14.0/infer/bin:/home/osboxes/.opam/infer-4.06.1+flambda/bin:/home/osboxes/bin:/home/osboxes/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+[8932][environment] INFER_OLD_PATH=/home/osboxes/infer/infer-linux64-v0.14.0/infer/bin:/home/osboxes/infer/infer-linux64-v0.14.0/infer/bin:/home/osboxes/.opam/infer-4.06.1+flambda/bin:/home/osboxes/bin:/home/osboxes/.local/bin:/home/osboxes/infer/infer-linux64-v0.14.0/infer/bin:/home/osboxes/infer/infer-linux64-v0.14.0/infer/bin:/home/osboxes/.opam/infer-4.06.1+flambda/bin:/home/osboxes/bin:/home/osboxes/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+[8932][environment] 
+
+[8941][environment] CWD = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[8941][environment] No .inferconfig file found
+[8941][environment] Project root = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[8941][environment] INFER_ARGS =   @/tmp/args.tmp.254766
+[8941][environment]   ++Contents of '/tmp/args.tmp.254766':
+[8941][environment]     @/tmp/args.tmp.46449c -g -O2 -o mkkeywordhash
+[8941][environment]     -DSQLITE_OMIT_LOAD_EXTENSION=1 ../tool/mkkeywordhash.c
+[8941][environment]     ++Contents of '/tmp/args.tmp.46449c':
+[8941][environment]       run --liveness
+[8941][environment]     
+[8941][environment]   
+[8941][environment] command line arguments:   gcc -g -O2 -o mkkeywordhash
+[8941][environment]                           -DSQLITE_OMIT_LOAD_EXTENSION=1
+[8941][environment]                           ../tool/mkkeywordhash.c
+[8941][environment] Analyzer: checkers
+[8941][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[8941][      debug] 
+[8941][      debug] *** Beginning capture of file /home/osboxes/experiments/sqlite-version-3.6.10/tool/mkkeywordhash.c ***
+[8941][      debug] Clang frontend action is translating and linting
+[8941][      debug] Loading the following linters files: /home/osboxes/infer/infer-linux64-v0.14.0/infer/bin/../lib/linter_rules/linters.al
+[8941][      debug] Elapsed: 166ms.
+[8941][      debug] 
+[8941][environment] Infer log identifier is 
+
+[8954][environment] CWD = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[8954][environment] No .inferconfig file found
+[8954][environment] Project root = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[8954][environment] INFER_ARGS =   @/tmp/args.tmp.147837
+[8954][environment]   ++Contents of '/tmp/args.tmp.147837':
+[8954][environment]     @/tmp/args.tmp.46449c -g -O2 -o lemon ../tool/lemon.c
+[8954][environment]     ++Contents of '/tmp/args.tmp.46449c':
+[8954][environment]       run --liveness
+[8954][environment]     
+[8954][environment]   
+[8954][environment] command line arguments:   gcc -g -O2 -o lemon ../tool/lemon.c
+[8954][environment] Analyzer: checkers
+[8954][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[8954][      debug] 
+[8954][      debug] *** Beginning capture of file /home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c ***
+[8954][      debug] Clang frontend action is translating and linting
+[8954][      debug] Loading the following linters files: /home/osboxes/infer/infer-linux64-v0.14.0/infer/bin/../lib/linter_rules/linters.al
+[8954][      debug] Aborting translation of method 'SetNew'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24063,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4148,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4148,"column":30}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'SetNew'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24063,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4148,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4148,"column":30}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'getstate'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":5506,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":765,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":765,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'getstate'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":5506,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":765,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":765,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'SetNew'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24063,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4148,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4148,"column":30}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'pathsearch'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":17252,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":2987,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":2987,"column":25}),"is_used":true,"is_this_declaration_referenced":true,"attributes":[<"NonNullAttr":{"pointer":17253,"source_range":({"file":"/usr/include/stdlib.h","line":564,"column":50},{"file":"/usr/include/stdlib.h","line":564,"column":50}),"parameters":["0"],"is_inherited":true}>,<"NoThrowAttr":{"pointer":17254,"source_range":({"file":"/usr/include/stdlib.h","line":564,"column":42},{"file":"/usr/include/stdlib.h","line":564,"column":42}),"parameters":[],"is_inherited":true}>]},{"name":"getenv","qual_name":["getenv"]},{"type_ptr":897},{"storage_class":"extern","parameters":[<"ParmVarDecl":({"pointer":17255,"source_range":({"file":"/usr/include/stdlib.h","line":564,"column":42},{"file":"/usr/include/stdlib.h","line":564,"column":42}),"is_implicit":true},{"name":"","qual_name":[""]},{"type_ptr":240},{"parm_index_in_function":0})>]})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'pathsearch'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":17252,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":2987,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":2987,"column":25}),"is_used":true,"is_this_declaration_referenced":true,"attributes":[<"NonNullAttr":{"pointer":17253,"source_range":({"file":"/usr/include/stdlib.h","line":564,"column":50},{"file":"/usr/include/stdlib.h","line":564,"column":50}),"parameters":["0"],"is_inherited":true}>,<"NoThrowAttr":{"pointer":17254,"source_range":({"file":"/usr/include/stdlib.h","line":564,"column":42},{"file":"/usr/include/stdlib.h","line":564,"column":42}),"parameters":[],"is_inherited":true}>]},{"name":"getenv","qual_name":["getenv"]},{"type_ptr":897},{"storage_class":"extern","parameters":[<"ParmVarDecl":({"pointer":17255,"source_range":({"file":"/usr/include/stdlib.h","line":564,"column":42},{"file":"/usr/include/stdlib.h","line":564,"column":42}),"is_implicit":true},{"name":"","qual_name":[""]},{"type_ptr":240},{"parm_index_in_function":0})>]})>
+[8954][      debug] Aborting translation of method 'SetNew'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24063,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4148,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4148,"column":30}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Strsafe'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24291,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4226,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'Symbol_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":24912,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4359,"column":5}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Aborting translation of method 'State_new'
+[8954][      debug] Unimplemented feature:
+[8954][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":25994,"parent_pointer":1,"source_range":({"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4596,"column":3},{"file":"/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c","line":4596,"column":3}),"is_used":true,"is_this_declaration_referenced":true},{"name":"memory_error","qual_name":["memory_error"]},{"type_ptr":3294},{"storage_class":"extern","decl_ptr_with_body":5507})>
+[8954][      debug] Elapsed: 717ms.
+[8954][      debug] 
+[8954][environment] Infer log identifier is 
+
+[8992][environment] CWD = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[8992][environment] No .inferconfig file found
+[8992][environment] Project root = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[8992][environment] INFER_ARGS =   @/tmp/args.tmp.bd1dc4
+[8992][environment]   ++Contents of '/tmp/args.tmp.bd1dc4':
+[8992][environment]     @/tmp/args.tmp.46449c -g -O2 -DSQLITE_OS_UNIX=1 -I. -I../src
+[8992][environment]     -D_HAVE_SQLITE_CONFIG_H -DNDEBUG -DSQLITE_THREADSAFE=1
+[8992][environment]     -DSQLITE_THREAD_OVERRIDE_LOCK=-1 -DSQLITE_OMIT_LOAD_EXTENSION=1 -c
+[8992][environment]     sqlite3.c -fPIC -DPIC -o .libs/sqlite3.o
+[8992][environment]     ++Contents of '/tmp/args.tmp.46449c':
+[8992][environment]       run --liveness
+[8992][environment]     
+[8992][environment]   
+[8992][environment] command line arguments:   gcc -g -O2 -DSQLITE_OS_UNIX=1 -I. -I../src
+[8992][environment]                           -D_HAVE_SQLITE_CONFIG_H -DNDEBUG
+[8992][environment]                           -DSQLITE_THREADSAFE=1
+[8992][environment]                           -DSQLITE_THREAD_OVERRIDE_LOCK=-1
+[8992][environment]                           -DSQLITE_OMIT_LOAD_EXTENSION=1 -c sqlite3.c -fPIC
+[8992][environment]                           -DPIC -o .libs/sqlite3.o
+[8992][environment] Analyzer: checkers
+[8992][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[8992][      debug] 
+[8992][      debug] *** Beginning capture of file /home/osboxes/experiments/sqlite-version-3.6.10/bld/sqlite3.c ***
+[8992][      debug] Clang frontend action is translating and linting
+[8992][      debug] Loading the following linters files: /home/osboxes/infer/infer-linux64-v0.14.0/infer/bin/../lib/linter_rules/linters.al
+[8992][      debug] Elapsed: 6.021s.
+[8992][      debug] 
+[8992][environment] Infer log identifier is 
+
+[9001][environment] CWD = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[9001][environment] No .inferconfig file found
+[9001][environment] Project root = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[9001][environment] INFER_ARGS =   @/tmp/args.tmp.c6a785
+[9001][environment]   ++Contents of '/tmp/args.tmp.c6a785':
+[9001][environment]     @/tmp/args.tmp.46449c -g -O2 -DSQLITE_OS_UNIX=1 -I. -I../src
+[9001][environment]     -D_HAVE_SQLITE_CONFIG_H -DNDEBUG -DSQLITE_THREADSAFE=1
+[9001][environment]     -DSQLITE_THREAD_OVERRIDE_LOCK=-1 -DSQLITE_OMIT_LOAD_EXTENSION=1 -c
+[9001][environment]     sqlite3.c -o sqlite3.o
+[9001][environment]     ++Contents of '/tmp/args.tmp.46449c':
+[9001][environment]       run --liveness
+[9001][environment]     
+[9001][environment]   
+[9001][environment] command line arguments:   gcc -g -O2 -DSQLITE_OS_UNIX=1 -I. -I../src
+[9001][environment]                           -D_HAVE_SQLITE_CONFIG_H -DNDEBUG
+[9001][environment]                           -DSQLITE_THREADSAFE=1
+[9001][environment]                           -DSQLITE_THREAD_OVERRIDE_LOCK=-1
+[9001][environment]                           -DSQLITE_OMIT_LOAD_EXTENSION=1 -c sqlite3.c -o
+[9001][environment]                           sqlite3.o
+[9001][environment] Analyzer: checkers
+[9001][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[9001][      debug] 
+[9001][      debug] *** Beginning capture of file /home/osboxes/experiments/sqlite-version-3.6.10/bld/sqlite3.c ***
+[9001][      debug] Clang frontend action is translating and linting
+[9001][      debug] Loading the following linters files: /home/osboxes/infer/infer-linux64-v0.14.0/infer/bin/../lib/linter_rules/linters.al
+[9001][      debug] Merging capture data for already-captured 'sqlite3.c'
+[9001][      debug] Elapsed: 6.206s.
+[9001][      debug] 
+[9001][environment] Infer log identifier is 
+
+[9045][environment] CWD = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[9045][environment] No .inferconfig file found
+[9045][environment] Project root = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[9045][environment] INFER_ARGS =   @/tmp/args.tmp.15136c
+[9045][environment]   ++Contents of '/tmp/args.tmp.15136c':
+[9045][environment]     @/tmp/args.tmp.46449c -shared .libs/sqlite3.o -lpthread -Wl,-soname
+[9045][environment]     -Wl,libsqlite3.so.0 -o .libs/libsqlite3.so.0.8.6
+[9045][environment]     ++Contents of '/tmp/args.tmp.46449c':
+[9045][environment]       run --liveness
+[9045][environment]     
+[9045][environment]   
+[9045][environment] command line arguments:   gcc -shared .libs/sqlite3.o -lpthread -Wl,-soname
+[9045][environment]                           -Wl,libsqlite3.so.0 -o .libs/libsqlite3.so.0.8.6
+[9045][environment] Analyzer: checkers
+[9045][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[9045][environment] Infer log identifier is 
+
+[9133][environment] CWD = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[9133][environment] No .inferconfig file found
+[9133][environment] Project root = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[9133][environment] INFER_ARGS =   @/tmp/args.tmp.1bbc33
+[9133][environment]   ++Contents of '/tmp/args.tmp.1bbc33':
+[9133][environment]     @/tmp/args.tmp.46449c -g -O2 -DSQLITE_OS_UNIX=1 -I. -I../src
+[9133][environment]     -D_HAVE_SQLITE_CONFIG_H -DNDEBUG -DSQLITE_THREADSAFE=1
+[9133][environment]     -DSQLITE_THREAD_OVERRIDE_LOCK=-1 -DSQLITE_OMIT_LOAD_EXTENSION=1
+[9133][environment]     -DHAVE_READLINE=0 -o .libs/sqlite3 ../src/shell.c ./.libs/libsqlite3.so
+[9133][environment]     -lpthread -Wl,-rpath -Wl,/usr/local/lib
+[9133][environment]     ++Contents of '/tmp/args.tmp.46449c':
+[9133][environment]       run --liveness
+[9133][environment]     
+[9133][environment]   
+[9133][environment] command line arguments:   gcc -g -O2 -DSQLITE_OS_UNIX=1 -I. -I../src
+[9133][environment]                           -D_HAVE_SQLITE_CONFIG_H -DNDEBUG
+[9133][environment]                           -DSQLITE_THREADSAFE=1
+[9133][environment]                           -DSQLITE_THREAD_OVERRIDE_LOCK=-1
+[9133][environment]                           -DSQLITE_OMIT_LOAD_EXTENSION=1 -DHAVE_READLINE=0 -o
+[9133][environment]                           .libs/sqlite3 ../src/shell.c ./.libs/libsqlite3.so
+[9133][environment]                           -lpthread -Wl,-rpath -Wl,/usr/local/lib
+[9133][environment] Analyzer: checkers
+[9133][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[9133][      debug] 
+[9133][      debug] *** Beginning capture of file /home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c ***
+[9133][      debug] Clang frontend action is translating and linting
+[9133][      debug] Loading the following linters files: /home/osboxes/infer/infer-linux64-v0.14.0/infer/bin/../lib/linter_rules/linters.al
+[9133][      debug] Elapsed: 351ms.
+[9133][      debug] 
+[9133][environment] Infer log identifier is 
+[8932][   progress] Found 4 source files to analyze in /home/osboxes/experiments/sqlite-version-3.6.10/bld/infer-out
+[8932][   progress] Starting analysis...
+[8932][   progress] 
+[8932][   progress] legend:
+[8932][   progress]   "F" analyzing a file
+[8932][   progress]   "." analyzing a procedure
+[8932][   progress] 
+[8932][   progress] 
+[8932][environment] Per-procedure parallelism jobs: 2
+[8932][   progress] FF
+
+[9153][   progress] .[9154][   progress] ..........................................................F
+[9155][   progress] .............................................................................................................................................F
+[9159][   progress] ..............................................................................................................
+[9159][ intern err] Uninit analyzer failed to compute post for pager_playbackCouldn't compute post for pager_playback. Broken CFG suspected
+[9159][   progress] ..................
+[9155][ intern err] Uninit analyzer failed to compute post for pager_playbackCouldn't compute post for pager_playback. Broken CFG suspected
+[9155][   progress] ........................................................................................................................................................................
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][   progress] ..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Mem0Global
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct sqlite3StatType
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][   progress] .
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][      debug] 
+[9155][      debug] typ_get_recursive_flds: unexpected sizeof(t=) unknown struct type: struct Sqlite3Config
+[9155][   progress] ................................................................................................................................................................................................................................................................................................................................................................................................
+[9293][      phase] ============================================================
+[9293][      phase] = New infer execution begins
+[9293][      phase] ============================================================
+[9293][environment] CWD = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[9293][environment] No .inferconfig file found
+[9293][environment] Project root = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[9293][environment] INFER_ARGS =   
+[9293][environment] command line arguments:   infer-explore
+[9293][environment] Analyzer: checkers
+[9293][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[9293][environment] Infer log identifier is 
+
+[9301][      phase] ============================================================
+[9301][      phase] = New infer execution begins
+[9301][      phase] ============================================================
+[9301][environment] CWD = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[9301][environment] No .inferconfig file found
+[9301][environment] Project root = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[9301][environment] INFER_ARGS =   
+[9301][environment] command line arguments:   infer-explore
+[9301][environment] Analyzer: checkers
+[9301][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[9301][ extern err] ** Error running the reporting script:
+[9301][ extern err] **   /home/osboxes/infer/infer-linux64-v0.14.0/infer/bin/../lib/python/inferTraceBugs -o /home/osboxes/experiments/sqlite-version-3.6.10/bld/infer-out
+[9301][ extern err] ** See error above
+[9301][environment] Infer log identifier is 
+
+[9565][      phase] ============================================================
+[9565][      phase] = New infer execution begins
+[9565][      phase] ============================================================
+[9565][environment] CWD = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[9565][environment] No .inferconfig file found
+[9565][environment] Project root = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[9565][environment] INFER_ARGS =   
+[9565][environment] command line arguments:   infer-explore
+[9565][environment] Analyzer: checkers
+[9565][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[9565][ extern err] ** Error running the reporting script:
+[9565][ extern err] **   /home/osboxes/infer/infer-linux64-v0.14.0/infer/bin/../lib/python/inferTraceBugs -o /home/osboxes/experiments/sqlite-version-3.6.10/bld/infer-out
+[9565][ extern err] ** See error above
+[9565][environment] Infer log identifier is 

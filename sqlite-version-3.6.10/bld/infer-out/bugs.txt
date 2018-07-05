@@ -1,0 +1,977 @@
+Found 121 issues
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:271: error: DEAD_STORE
+  The value written to &eol (type int) is never used.
+  269.         }
+  270.         zLine[n] = 0;
+  271. >       eol = 1;
+  272.         break;
+  273.       }
+
+/home/osboxes/experiments/sqlite-version-3.6.10/tool/mkkeywordhash.c:459: error: UNINITIALIZED_VALUE
+  The value read from aHash.[_] was never initialized.
+  457.     for(i=0; i<nKeyword; i++){
+  458.       h = aKeywordTable[i].hash % bestSize;
+  459. >     aKeywordTable[i].iNext = aHash[h];
+  460.       aHash[h] = i+1;
+  461.     }
+
+/home/osboxes/experiments/sqlite-version-3.6.10/tool/mkkeywordhash.c:511: error: UNINITIALIZED_VALUE
+  The value read from aHash.[_] was never initialized.
+  509.     for(i=j=0; i<bestSize; i++){
+  510.       if( j==0 ) printf("    ");
+  511. >     printf(" %3d,", aHash[i]);
+  512.       j++;
+  513.       if( j>12 ){
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:773: error: DEAD_STORE
+  The value written to &zCsr (type char*) is never used.
+  771.       }
+  772.       *zCsr++ = quote;
+  773. >     *zCsr++ = '\0';
+  774.       assert( (zCsr-zIn)==len );
+  775.     }else{
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:894: error: DEAD_STORE
+  The value written to &rc (type int) is never used.
+  892.       if( rc==SQLITE_CORRUPT ){
+  893.         zSelect = appendText(zSelect, " ORDER BY rowid DESC", 0);
+  894. >       rc = run_table_dump_query(p->out, p->db, zSelect);
+  895.       }
+  896.       if( zSelect ) free(zSelect);
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1243: error: DEAD_STORE
+  The value written to &rc (type int) is never used.
+  1241.         fprintf(stderr,"Error: %s\n", sqlite3_errmsg(db));
+  1242.         nCol = 0;
+  1243. >       rc = 1;
+  1244.       }else{
+  1245.         nCol = sqlite3_column_count(pStmt);
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1311: error: DEAD_STORE
+  The value written to &rc (type int) is never used.
+  1309.           fprintf(stderr,"Error: %s\n", sqlite3_errmsg(db));
+  1310.           zCommit = "ROLLBACK";
+  1311. >         rc = 1;
+  1312.           break;
+  1313.         }
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1608: error: DEAD_STORE
+  The value written to &rc (type int) is never used.
+  1606.         }
+  1607.       }else{
+  1608. >       rc = 1;
+  1609.       }
+  1610.       sqlite3_free_table(azResult);
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1092: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1090.     */
+  1091.     if( nArg==0 ) return rc;
+  1092. >   n = strlen30(azArg[0]);
+  1093.     c = azArg[0][0];
+  1094.     if( c=='b' && n>1 && strncmp(azArg[0], "bail", n)==0 && nArg>1 ){
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1094: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1092.     n = strlen30(azArg[0]);
+  1093.     c = azArg[0][0];
+  1094. >   if( c=='b' && n>1 && strncmp(azArg[0], "bail", n)==0 && nArg>1 ){
+  1095.       bail_on_error = booleanValue(azArg[1]);
+  1096.     }else
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1095: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1093.     c = azArg[0][0];
+  1094.     if( c=='b' && n>1 && strncmp(azArg[0], "bail", n)==0 && nArg>1 ){
+  1095. >     bail_on_error = booleanValue(azArg[1]);
+  1096.     }else
+  1097.   
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1098: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1096.     }else
+  1097.   
+  1098. >   if( c=='d' && n>1 && strncmp(azArg[0], "databases", n)==0 ){
+  1099.       struct callback_data data;
+  1100.       char *zErrMsg = 0;
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1116: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1114.     }else
+  1115.   
+  1116. >   if( c=='d' && strncmp(azArg[0], "dump", n)==0 ){
+  1117.       char *zErrMsg = 0;
+  1118.       open_db(p);
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1161: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1159.     }else
+  1160.   
+  1161. >   if( c=='e' && strncmp(azArg[0], "echo", n)==0 && nArg>1 ){
+  1162.       p->echoOn = booleanValue(azArg[1]);
+  1163.     }else
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1162: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1160.   
+  1161.     if( c=='e' && strncmp(azArg[0], "echo", n)==0 && nArg>1 ){
+  1162. >     p->echoOn = booleanValue(azArg[1]);
+  1163.     }else
+  1164.   
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1165: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1163.     }else
+  1164.   
+  1165. >   if( c=='e' && strncmp(azArg[0], "exit", n)==0 ){
+  1166.       rc = 2;
+  1167.     }else
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1169: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1167.     }else
+  1168.   
+  1169. >   if( c=='e' && strncmp(azArg[0], "explain", n)==0 ){
+  1170.       int val = nArg>=2 ? booleanValue(azArg[1]) : 1;
+  1171.       if(val == 1) {
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1170: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1168.   
+  1169.     if( c=='e' && strncmp(azArg[0], "explain", n)==0 ){
+  1170. >     int val = nArg>=2 ? booleanValue(azArg[1]) : 1;
+  1171.       if(val == 1) {
+  1172.         if(!p->explainPrev.valid) {
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1204: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1202.     }else
+  1203.   
+  1204. >   if( c=='h' && (strncmp(azArg[0], "header", n)==0 ||
+  1205.                    strncmp(azArg[0], "headers", n)==0 )&& nArg>1 ){
+  1206.       p->showHeader = booleanValue(azArg[1]);
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1205: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1203.   
+  1204.     if( c=='h' && (strncmp(azArg[0], "header", n)==0 ||
+  1205. >                  strncmp(azArg[0], "headers", n)==0 )&& nArg>1 ){
+  1206.       p->showHeader = booleanValue(azArg[1]);
+  1207.     }else
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1206: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1204.     if( c=='h' && (strncmp(azArg[0], "header", n)==0 ||
+  1205.                    strncmp(azArg[0], "headers", n)==0 )&& nArg>1 ){
+  1206. >     p->showHeader = booleanValue(azArg[1]);
+  1207.     }else
+  1208.   
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1209: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1207.     }else
+  1208.   
+  1209. >   if( c=='h' && strncmp(azArg[0], "help", n)==0 ){
+  1210.       fprintf(stderr,"%s",zHelp);
+  1211.     }else
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1213: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1211.     }else
+  1212.   
+  1213. >   if( c=='i' && strncmp(azArg[0], "import", n)==0 && nArg>=3 ){
+  1214.       char *zTable = azArg[2];    /* Insert data into this table */
+  1215.       char *zFile = azArg[1];     /* The file from which to extract data */
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1321: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1319.     }else
+  1320.   
+  1321. >   if( c=='i' && strncmp(azArg[0], "indices", n)==0 && nArg>1 ){
+  1322.       struct callback_data data;
+  1323.       char *zErrMsg = 0;
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1384: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1382.   #endif
+  1383.   
+  1384. >   if( c=='m' && strncmp(azArg[0], "mode", n)==0 && nArg>=2 ){
+  1385.       int n2 = strlen30(azArg[1]);
+  1386.       if( strncmp(azArg[1],"line",n2)==0
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1385: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1383.   
+  1384.     if( c=='m' && strncmp(azArg[0], "mode", n)==0 && nArg>=2 ){
+  1385. >     int n2 = strlen30(azArg[1]);
+  1386.       if( strncmp(azArg[1],"line",n2)==0
+  1387.           ||
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1386: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1384.     if( c=='m' && strncmp(azArg[0], "mode", n)==0 && nArg>=2 ){
+  1385.       int n2 = strlen30(azArg[1]);
+  1386. >     if( strncmp(azArg[1],"line",n2)==0
+  1387.           ||
+  1388.           strncmp(azArg[1],"lines",n2)==0 ){
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1388: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1386.       if( strncmp(azArg[1],"line",n2)==0
+  1387.           ||
+  1388. >         strncmp(azArg[1],"lines",n2)==0 ){
+  1389.         p->mode = MODE_Line;
+  1390.       }else if( strncmp(azArg[1],"column",n2)==0
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1390: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1388.           strncmp(azArg[1],"lines",n2)==0 ){
+  1389.         p->mode = MODE_Line;
+  1390. >     }else if( strncmp(azArg[1],"column",n2)==0
+  1391.                 ||
+  1392.                 strncmp(azArg[1],"columns",n2)==0 ){
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1392: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1390.       }else if( strncmp(azArg[1],"column",n2)==0
+  1391.                 ||
+  1392. >               strncmp(azArg[1],"columns",n2)==0 ){
+  1393.         p->mode = MODE_Column;
+  1394.       }else if( strncmp(azArg[1],"list",n2)==0 ){
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1394: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1392.                 strncmp(azArg[1],"columns",n2)==0 ){
+  1393.         p->mode = MODE_Column;
+  1394. >     }else if( strncmp(azArg[1],"list",n2)==0 ){
+  1395.         p->mode = MODE_List;
+  1396.       }else if( strncmp(azArg[1],"html",n2)==0 ){
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1396: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1394.       }else if( strncmp(azArg[1],"list",n2)==0 ){
+  1395.         p->mode = MODE_List;
+  1396. >     }else if( strncmp(azArg[1],"html",n2)==0 ){
+  1397.         p->mode = MODE_Html;
+  1398.       }else if( strncmp(azArg[1],"tcl",n2)==0 ){
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1398: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1396.       }else if( strncmp(azArg[1],"html",n2)==0 ){
+  1397.         p->mode = MODE_Html;
+  1398. >     }else if( strncmp(azArg[1],"tcl",n2)==0 ){
+  1399.         p->mode = MODE_Tcl;
+  1400.       }else if( strncmp(azArg[1],"csv",n2)==0 ){
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1400: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1398.       }else if( strncmp(azArg[1],"tcl",n2)==0 ){
+  1399.         p->mode = MODE_Tcl;
+  1400. >     }else if( strncmp(azArg[1],"csv",n2)==0 ){
+  1401.         p->mode = MODE_Csv;
+  1402.         sqlite3_snprintf(sizeof(p->separator), p->separator, ",");
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1403: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1401.         p->mode = MODE_Csv;
+  1402.         sqlite3_snprintf(sizeof(p->separator), p->separator, ",");
+  1403. >     }else if( strncmp(azArg[1],"tabs",n2)==0 ){
+  1404.         p->mode = MODE_List;
+  1405.         sqlite3_snprintf(sizeof(p->separator), p->separator, "\t");
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1406: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1404.         p->mode = MODE_List;
+  1405.         sqlite3_snprintf(sizeof(p->separator), p->separator, "\t");
+  1406. >     }else if( strncmp(azArg[1],"insert",n2)==0 ){
+  1407.         p->mode = MODE_Insert;
+  1408.         if( nArg>=3 ){
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1409: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1407.         p->mode = MODE_Insert;
+  1408.         if( nArg>=3 ){
+  1409. >         set_table_name(p, azArg[2]);
+  1410.         }else{
+  1411.           set_table_name(p, "table");
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1419: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1417.     }else
+  1418.   
+  1419. >   if( c=='n' && strncmp(azArg[0], "nullvalue", n)==0 && nArg==2 ) {
+  1420.       sqlite3_snprintf(sizeof(p->nullvalue), p->nullvalue,
+  1421.                        "%.*s", (int)ArraySize(p->nullvalue)-1, azArg[1]);
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1420: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1418.   
+  1419.     if( c=='n' && strncmp(azArg[0], "nullvalue", n)==0 && nArg==2 ) {
+  1420. >     sqlite3_snprintf(sizeof(p->nullvalue), p->nullvalue,
+  1421.                        "%.*s", (int)ArraySize(p->nullvalue)-1, azArg[1]);
+  1422.     }else
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1424: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1422.     }else
+  1423.   
+  1424. >   if( c=='o' && strncmp(azArg[0], "output", n)==0 && nArg==2 ){
+  1425.       if( p->out!=stdout ){
+  1426.         fclose(p->out);
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1428: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1426.         fclose(p->out);
+  1427.       }
+  1428. >     if( strcmp(azArg[1],"stdout")==0 ){
+  1429.         p->out = stdout;
+  1430.         sqlite3_snprintf(sizeof(p->outfile), p->outfile, "stdout");
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1432: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1430.         sqlite3_snprintf(sizeof(p->outfile), p->outfile, "stdout");
+  1431.       }else{
+  1432. >       p->out = fopen(azArg[1], "wb");
+  1433.         if( p->out==0 ){
+  1434.           fprintf(stderr,"can't write to \"%s\"\n", azArg[1]);
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1434: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1432.         p->out = fopen(azArg[1], "wb");
+  1433.         if( p->out==0 ){
+  1434. >         fprintf(stderr,"can't write to \"%s\"\n", azArg[1]);
+  1435.           p->out = stdout;
+  1436.         } else {
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1437: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1435.           p->out = stdout;
+  1436.         } else {
+  1437. >          sqlite3_snprintf(sizeof(p->outfile), p->outfile, "%s", azArg[1]);
+  1438.         }
+  1439.       }
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1442: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1440.     }else
+  1441.   
+  1442. >   if( c=='p' && strncmp(azArg[0], "prompt", n)==0 && (nArg==2 || nArg==3)){
+  1443.       if( nArg >= 2) {
+  1444.         strncpy(mainPrompt,azArg[1],(int)ArraySize(mainPrompt)-1);
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1444: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1442.     if( c=='p' && strncmp(azArg[0], "prompt", n)==0 && (nArg==2 || nArg==3)){
+  1443.       if( nArg >= 2) {
+  1444. >       strncpy(mainPrompt,azArg[1],(int)ArraySize(mainPrompt)-1);
+  1445.       }
+  1446.       if( nArg >= 3) {
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1447: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1445.       }
+  1446.       if( nArg >= 3) {
+  1447. >       strncpy(continuePrompt,azArg[2],(int)ArraySize(continuePrompt)-1);
+  1448.       }
+  1449.     }else
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1451: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1449.     }else
+  1450.   
+  1451. >   if( c=='q' && strncmp(azArg[0], "quit", n)==0 ){
+  1452.       rc = 2;
+  1453.     }else
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1455: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1453.     }else
+  1454.   
+  1455. >   if( c=='r' && strncmp(azArg[0], "read", n)==0 && nArg==2 ){
+  1456.       FILE *alt = fopen(azArg[1], "rb");
+  1457.       if( alt==0 ){
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1456: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1454.   
+  1455.     if( c=='r' && strncmp(azArg[0], "read", n)==0 && nArg==2 ){
+  1456. >     FILE *alt = fopen(azArg[1], "rb");
+  1457.       if( alt==0 ){
+  1458.         fprintf(stderr,"can't open \"%s\"\n", azArg[1]);
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1458: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1456.       FILE *alt = fopen(azArg[1], "rb");
+  1457.       if( alt==0 ){
+  1458. >       fprintf(stderr,"can't open \"%s\"\n", azArg[1]);
+  1459.       }else{
+  1460.         process_input(p, alt);
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1465: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1463.     }else
+  1464.   
+  1465. >   if( c=='s' && strncmp(azArg[0], "schema", n)==0 ){
+  1466.       struct callback_data data;
+  1467.       char *zErrMsg = 0;
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1475: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1473.         int i;
+  1474.         for(i=0; azArg[1][i]; i++) azArg[1][i] = (char)tolower(azArg[1][i]);
+  1475. >       if( strcmp(azArg[1],"sqlite_master")==0 ){
+  1476.           char *new_argv[2], *new_colv[2];
+  1477.           new_argv[0] = "CREATE TABLE sqlite_master (\n"
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1488: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1486.           new_colv[1] = 0;
+  1487.           callback(&data, 1, new_argv, new_colv);
+  1488. >       }else if( strcmp(azArg[1],"sqlite_temp_master")==0 ){
+  1489.           char *new_argv[2], *new_colv[2];
+  1490.           new_argv[0] = "CREATE TEMP TABLE sqlite_temp_master (\n"
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1530: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1528.     }else
+  1529.   
+  1530. >   if( c=='s' && strncmp(azArg[0], "separator", n)==0 && nArg==2 ){
+  1531.       sqlite3_snprintf(sizeof(p->separator), p->separator,
+  1532.                        "%.*s", (int)sizeof(p->separator)-1, azArg[1]);
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1531: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1529.   
+  1530.     if( c=='s' && strncmp(azArg[0], "separator", n)==0 && nArg==2 ){
+  1531. >     sqlite3_snprintf(sizeof(p->separator), p->separator,
+  1532.                        "%.*s", (int)sizeof(p->separator)-1, azArg[1]);
+  1533.     }else
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1535: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1533.     }else
+  1534.   
+  1535. >   if( c=='s' && strncmp(azArg[0], "show", n)==0){
+  1536.       int i;
+  1537.       fprintf(p->out,"%9.9s: %s\n","echo", p->echoOn ? "on" : "off");
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1556: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1554.     }else
+  1555.   
+  1556. >   if( c=='t' && n>1 && strncmp(azArg[0], "tables", n)==0 ){
+  1557.       char **azResult;
+  1558.       int nRow, rc;
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1613: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1611.     }else
+  1612.   
+  1613. >   if( c=='t' && n>4 && strncmp(azArg[0], "timeout", n)==0 && nArg>=2 ){
+  1614.       open_db(p);
+  1615.       sqlite3_busy_timeout(p->db, atoi(azArg[1]));
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1615: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1613.     if( c=='t' && n>4 && strncmp(azArg[0], "timeout", n)==0 && nArg>=2 ){
+  1614.       open_db(p);
+  1615. >     sqlite3_busy_timeout(p->db, atoi(azArg[1]));
+  1616.     }else
+  1617.     
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1619: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1617.     
+  1618.   #if HAS_TIMER  
+  1619. >   if( c=='t' && n>=5 && strncmp(azArg[0], "timer", n)==0 && nArg>1 ){
+  1620.       enableTimer = booleanValue(azArg[1]);
+  1621.     }else
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1620: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1618.   #if HAS_TIMER  
+  1619.     if( c=='t' && n>=5 && strncmp(azArg[0], "timer", n)==0 && nArg>1 ){
+  1620. >     enableTimer = booleanValue(azArg[1]);
+  1621.     }else
+  1622.   #endif
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1624: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1622.   #endif
+  1623.   
+  1624. >   if( c=='w' && strncmp(azArg[0], "width", n)==0 ){
+  1625.       int j;
+  1626.       assert( nArg<=ArraySize(azArg) );
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1628: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1626.       assert( nArg<=ArraySize(azArg) );
+  1627.       for(j=1; j<nArg && j<ArraySize(p->colWidth); j++){
+  1628. >       p->colWidth[j-1] = atoi(azArg[j]);
+  1629.       }
+  1630.     }else
+
+/home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c:1634: error: UNINITIALIZED_VALUE
+  The value read from azArg.[_] was never initialized.
+  1632.   
+  1633.     {
+  1634. >     fprintf(stderr, "unknown command or invalid arguments: "
+  1635.         " \"%s\". Enter \".help\" for help\n", azArg[0]);
+  1636.     }
+
+/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c:1636: error: UNINITIALIZED_VALUE
+  The value read from set.[_] was never initialized.
+  1634.       NEXT(ep) = 0;
+  1635.       for(i=0; i<LISTSIZE-1 && set[i]!=0; i++){
+  1636. >       ep = merge(ep,set[i],cmp,offset);
+  1637.         set[i] = 0;
+  1638.       }
+
+/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c:1642: error: UNINITIALIZED_VALUE
+  The value read from set.[_] was never initialized.
+  1640.     }
+  1641.     ep = 0;
+  1642. >   for(i=0; i<LISTSIZE; i++) if( set[i] ) ep = merge(ep,set[i],cmp,offset);
+  1643.     return ep;
+  1644.   }
+
+/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c:2363: error: UNINITIALIZED_VALUE
+  The value read from nLine was never initialized.
+  2361.               *(zBuf++) = '\n';
+  2362.             }
+  2363. >           memcpy(zBuf, zLine, nLine);
+  2364.             zBuf += nLine;
+  2365.             *(zBuf++) = '"';
+
+/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c:3381: error: DEAD_STORE
+  The value written to &lineno (type int) is never used.
+  3379.   int mhflag;                 /* True if generating makeheaders output */
+  3380.   {
+  3381. >   int lineno = *plineno;    /* The line number of the output */
+  3382.     char **types;             /* A hash table of datatypes */
+  3383.     int arraysize;            /* Size of the "types" array */
+
+/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c:3393: error: NULL_DEREFERENCE
+  pointer `types` last assigned on line 3392 could be null and is dereferenced at line 3393, column 30.
+  3391.     arraysize = lemp->nsymbol * 2;
+  3392.     types = (char**)calloc( arraysize, sizeof(char*) );
+  3393. >   for(i=0; i<arraysize; i++) types[i] = 0;
+  3394.     maxdtlength = 0;
+  3395.     if( lemp->vartype ){
+
+/home/osboxes/experiments/sqlite-version-3.6.10/tool/lemon.c:3578: error: MEMORY_LEAK
+  memory dynamically allocated by call to `file_open()` at line 3569, column 9 is not reachable after line 3578, column 3.
+  3576.   
+  3577.     /* Generate the include code, if any */
+  3578. >   tplt_print(out,lemp,lemp->include,&lineno);
+  3579.     if( mhflag ){
+  3580.       char *name = file_makename(lemp, ".h");
+
+sqlite3.c:13020: error: DEAD_STORE
+  The value written to &p (type long long*) is never used.
+  13018.   */
+  13019.   static void *sqlite3MemRealloc(void *pPrior, int nByte){
+  13020. >   sqlite3_int64 *p = (sqlite3_int64*)pPrior;
+  13021.     assert( pPrior!=0 && nByte>0 );
+  13022.     nByte = (nByte+7)&~7;
+
+sqlite3.c:18944: error: DEAD_STORE
+  The value written to &j (type int) is never used.
+  18942.           i++;
+  18943.         }else{
+  18944. >         z[j++] = 0;
+  18945.           break;
+  18946.         }
+
+sqlite3.c:22949: error: DEAD_STORE
+  The value written to &pLock (type unixLockInfo*) is never used.
+  22947.     int rc = SQLITE_OK;
+  22948.     unixFile *pFile = (unixFile*)id;
+  22949. >   struct unixLockInfo *pLock = pFile->pLock;
+  22950.     struct flock lock;
+  22951.     int s;
+
+sqlite3.c:23584: error: UNINITIALIZED_VALUE
+  The value read from rc was never initialized.
+  23582.         pFile->lastErrno = tErrno;
+  23583.       }
+  23584. >     return rc; 
+  23585.     }
+  23586.     pFile->locktype = NO_LOCK;
+
+sqlite3.c:25530: error: RESOURCE_LEAK
+  resource acquired to `fd` by call to `openDirectory()` at line 25513, column 10 is not released after line 25530, column 1.
+  25528.   #endif
+  25529.     return rc;
+  25530. > }
+  25531.   
+  25532.   /*
+
+sqlite3.c:29006: error: UNINITIALIZED_VALUE
+  The value read from aiValues.[_] was never initialized.
+  29004.       rc = sqlite3BitvecSet(p, i);
+  29005.       for(j=0; j<BITVEC_NINT; j++){
+  29006. >       if( aiValues[j] ) rc |= sqlite3BitvecSet(p, aiValues[j]);
+  29007.       }
+  29008.       return rc;
+
+sqlite3.c:29515: error: DEAD_STORE
+  The value written to &pCache (type PCache*) is never used.
+  29513.     assert( p->nRef>0 );
+  29514.     if( 0==(p->flags & PGHDR_DIRTY) ){
+  29515. >     pCache = p->pCache;
+  29516.       p->flags |= PGHDR_DIRTY;
+  29517.       pcacheAddToDirtyList( p);
+
+sqlite3.c:30685: error: MEMORY_LEAK
+  `pTail->pNext` is not reachable after line 30685, column 7.
+  30683.         pTail = pTail->pNext;
+  30684.       }else if( pB->v<pA->v ){
+  30685. >       pTail->pNext = pB;
+  30686.         pB = pB->pNext;
+  30687.         pTail = pTail->pNext;
+
+sqlite3.c:37317: error: NULL_DEREFERENCE
+  pointer `pPage` last assigned on line 37316 could be null and is dereferenced at line 37317, column 3.
+  37315.   static MemPage *btreePageFromDbPage(DbPage *pDbPage, Pgno pgno, BtShared *pBt){
+  37316.     MemPage *pPage = (MemPage*)sqlite3PagerGetExtra(pDbPage);
+  37317. >   pPage->aData = sqlite3PagerGetData(pDbPage);
+  37318.     pPage->pDbPage = pDbPage;
+  37319.     pPage->pBt = pBt;
+
+sqlite3.c:37360: error: DEAD_STORE
+  The value written to &rc (type int) is never used.
+  37358.     int rc;
+  37359.     assert( pBt->pPage1 );
+  37360. >   rc = sqlite3PagerPagecount(pBt->pPager, &nPage);
+  37361.     assert( rc==SQLITE_OK || nPage==-1 );
+  37362.     return (Pgno)nPage;
+
+sqlite3.c:37440: error: NULL_DEREFERENCE
+  pointer `pPage` last assigned on line 37439 could be null and is dereferenced at line 37440, column 7.
+  37438.     MemPage *pPage;
+  37439.     pPage = (MemPage *)sqlite3PagerGetExtra(pData);
+  37440. >   if( pPage->isInit ){
+  37441.       assert( sqlite3_mutex_held(pPage->pBt->mutex) );
+  37442.       pPage->isInit = 0;
+
+sqlite3.c:37603: error: UNINITIALIZED_VALUE
+  The value read from zDbHeader.[_] was never initialized.
+  37601.         nReserve = 0;
+  37602.       }else{
+  37603. >       nReserve = zDbHeader[20];
+  37604.         pBt->pageSizeFixed = 1;
+  37605.   #ifndef SQLITE_OMIT_AUTOVACUUM
+
+sqlite3.c:40105: error: DEAD_STORE
+  The value written to &upr (type int) is never used.
+  40103.           if( pPage->intKey && !pPage->leaf ){
+  40104.             lwr = idx;
+  40105. >           upr = lwr - 1;
+  40106.             break;
+  40107.           }else{
+
+sqlite3.c:40987: error: DEAD_STORE
+  The value written to &top (type int) is never used.
+  40985.           return rc;
+  40986.         }
+  40987. >       top = get2byte(&data[hdr+5]);
+  40988.         assert( end + sz <= top );
+  40989.       }
+
+sqlite3.c:41448: error: UNINITIALIZED_VALUE
+  The value read from apDiv.[_] was never initialized.
+  41446.       }
+  41447.       if( i<nOld-1 ){
+  41448. >       u16 sz = cellSizePtr(pParent, apDiv[i]);
+  41449.         if( leafData ){
+  41450.           /* With the LEAFDATA flag, pParent cells hold only INTKEYs that
+
+sqlite3.c:41464: error: UNINITIALIZED_VALUE
+  The value read from apDiv.[_] was never initialized.
+  41462.           assert( sz<=pBt->pageSize/4 );
+  41463.           assert( iSpace1<=pBt->pageSize );
+  41464. >         memcpy(pTemp, apDiv[i], sz);
+  41465.           apCell[nCell] = pTemp+leafCorrection;
+  41466.           if( ISAUTOVACUUM ){
+
+sqlite3.c:41575: error: UNINITIALIZED_VALUE
+  The value read from pgnoNew.[_] was never initialized.
+  41573.       }else{
+  41574.         assert( i>0 );
+  41575. >       rc = allocateBtreePage(pBt, &pNew, &pgnoNew[i], pgnoNew[i-1], 0);
+  41576.         if( rc ) goto balance_cleanup;
+  41577.         apNew[i] = pNew;
+
+sqlite3.c:41607: error: UNINITIALIZED_VALUE
+  The value read from pgnoNew.[_] was never initialized.
+  41605.     */
+  41606.     for(i=0; i<k-1; i++){
+  41607. >     int minV = pgnoNew[i];
+  41608.       int minI = i;
+  41609.       for(j=i+1; j<k; j++){
+
+sqlite3.c:41612: error: UNINITIALIZED_VALUE
+  The value read from pgnoNew.[_] was never initialized.
+  41610.         if( pgnoNew[j]<(unsigned)minV ){
+  41611.           minI = j;
+  41612. >         minV = pgnoNew[j];
+  41613.         }
+  41614.       }
+
+sqlite3.c:41618: error: UNINITIALIZED_VALUE
+  The value read from pgnoNew.[_] was never initialized.
+  41616.         int t;
+  41617.         MemPage *pT;
+  41618. >       t = pgnoNew[i];
+  41619.         pT = apNew[i];
+  41620.         pgnoNew[i] = pgnoNew[minI];
+
+sqlite3.c:41771: error: UNINITIALIZED_VALUE
+  The value read from pgnoNew.[_] was never initialized.
+  41769.     if( nxDiv==pParent->nCell+pParent->nOverflow ){
+  41770.       /* Right-most sibling is the right-most child of pParent */
+  41771. >     put4byte(&pParent->aData[pParent->hdrOffset+8], pgnoNew[nNew-1]);
+  41772.     }else{
+  41773.       /* Right-most sibling is the left child of the first entry in pParent
+
+sqlite3.c:41775: error: UNINITIALIZED_VALUE
+  The value read from pgnoNew.[_] was never initialized.
+  41773.       /* Right-most sibling is the left child of the first entry in pParent
+  41774.       ** past the right-most divider entry */
+  41775. >     put4byte(findOverflowCell(pParent, nxDiv), pgnoNew[nNew-1]);
+  41776.     }
+  41777.   
+
+sqlite3.c:41568: error: UNINITIALIZED_VALUE
+  The value read from pgnoOld.[_] was never initialized.
+  41566.       if( i<nOld ){
+  41567.         pNew = apNew[i] = apOld[i];
+  41568. >       pgnoNew[i] = pgnoOld[i];
+  41569.         apOld[i] = 0;
+  41570.         rc = sqlite3PagerWrite(pNew->pDbPage);
+
+sqlite3.c:44573: error: DEAD_STORE
+  The value written to &db (type sqlite3*) is never used.
+  44571.     int rc = SQLITE_OK;
+  44572.   
+  44573. >   db = sqlite3BtreeCursorDb(pCur);
+  44574.     assert( sqlite3_mutex_held(db->mutex) );
+  44575.     assert( (pMem->flags & MEM_RowSet)==0 );
+
+sqlite3.c:44755: error: NULL_DEREFERENCE
+  pointer `pVal` last assigned on line 44734 could be null and is dereferenced at line 44755, column 24.
+  44753.     }else if( op==TK_UMINUS ) {
+  44754.       if( SQLITE_OK==sqlite3ValueFromExpr(db,pExpr->pLeft,enc,affinity,&pVal) ){
+  44755. >       pVal->u.i = -1 * pVal->u.i;
+  44756.         pVal->r = -1.0 * pVal->r;
+  44757.       }
+
+sqlite3.c:46213: error: DEAD_STORE
+  The value written to &zMainFile (type char const *) is never used.
+  46211.       ** flag is set this is not required.
+  46212.       */
+  46213. >     zMainFile = sqlite3BtreeGetDirname(db->aDb[0].pBt);
+  46214.       if( (needSync 
+  46215.        && (0==(sqlite3OsDeviceCharacteristics(pMaster)&SQLITE_IOCAP_SEQUENTIAL))
+
+sqlite3.c:48120: error: DEAD_STORE
+  The value written to &vals (type int) is never used.
+  48118.     if( pVm && pVm->pResultSet!=0 && i<pVm->nResColumn && i>=0 ){
+  48119.       sqlite3_mutex_enter(pVm->db->mutex);
+  48120. >     vals = sqlite3_data_count(pStmt);
+  48121.       pOut = &pVm->pResultSet[i];
+  48122.     }else{
+
+sqlite3.c:58757: error: NULL_DEREFERENCE
+  pointer `pParse->pVdbe` last assigned on line 58749 could be null and is dereferenced by call to `sqlite3ExprHardCopy()` at line 58757, column 7.
+  58755.       }
+  58756.       if( doHardCopy ){
+  58757. >       sqlite3ExprHardCopy(pParse, target, n);
+  58758.       }
+  58759.     }
+
+sqlite3.c:58751: error: NULL_DEREFERENCE
+  pointer `v` last assigned on line 58749 could be null and is dereferenced by call to `sqlite3VdbeAddOp2()` at line 58751, column 9.
+  58749.         Vdbe *v = sqlite3GetVdbe(pParse);
+  58750.         if( iReg!=target+i ){
+  58751. >         sqlite3VdbeAddOp2(v, OP_SCopy, iReg, target+i);
+  58752.         }
+  58753.       }else{
+
+sqlite3.c:61541: error: DEAD_STORE
+  The value written to &pOld (type Index*) is never used.
+  61539.     const char *zName = p->zName;
+  61540.   
+  61541. >   pOld = sqlite3HashInsert(&p->pSchema->idxHash, zName,
+  61542.                              sqlite3Strlen30(zName)+1, 0);
+  61543.     assert( pOld==0 || pOld==p );
+
+sqlite3.c:61788: error: NULL_DEREFERENCE
+  pointer `v` last assigned on line 61786 could be null and is dereferenced by call to `sqlite3VdbeAddOp2()` at line 61788, column 3.
+  61786.     Vdbe *v = sqlite3GetVdbe(p);
+  61787.     sqlite3TableLock(p, iDb, MASTER_ROOT, 1, SCHEMA_TABLE(iDb));
+  61788. >   sqlite3VdbeAddOp2(v, OP_SetNumColumns, 0, 5);/* sqlite_master has 5 columns */
+  61789.     sqlite3VdbeAddOp3(v, OP_OpenWrite, 0, MASTER_ROOT, iDb);
+  61790.   }
+
+sqlite3.c:63048: error: NULL_DEREFERENCE
+  pointer `v` last assigned on line 63046 could be null and is dereferenced by call to `sqlite3VdbeAddOp3()` at line 63048, column 3.
+  63046.     Vdbe *v = sqlite3GetVdbe(pParse);
+  63047.     int r1 = sqlite3GetTempReg(pParse);
+  63048. >   sqlite3VdbeAddOp3(v, OP_Destroy, iTable, r1, iDb);
+  63049.   #ifndef SQLITE_OMIT_AUTOVACUUM
+  63050.     /* OP_Destroy stores an in integer r1. If this integer
+
+sqlite3.c:64841: error: NULL_DEREFERENCE
+  pointer `pColl2` last assigned on line 64840 could be null and is dereferenced at line 64841, column 9.
+  64839.     for(i=0; i<3; i++){
+  64840.       pColl2 = sqlite3FindCollSeq(db, aEnc[i], z, n, 0);
+  64841. >     if( pColl2->xCmp!=0 ){
+  64842.         memcpy(pColl, pColl2, sizeof(CollSeq));
+  64843.         pColl->xDel = 0;         /* Do not copy the destructor */
+
+sqlite3.c:65310: error: NULL_DEREFERENCE
+  pointer `v` last assigned on line 65307 could be null and is dereferenced by call to `sqlite3VdbeAddOp2()` at line 65310, column 3.
+  65308.     assert( opcode==OP_OpenWrite || opcode==OP_OpenRead );
+  65309.     sqlite3TableLock(p, iDb, pTab->tnum, (opcode==OP_OpenWrite)?1:0, pTab->zName);
+  65310. >   sqlite3VdbeAddOp2(v, OP_SetNumColumns, 0, pTab->nCol);
+  65311.     sqlite3VdbeAddOp3(v, opcode, iCur, pTab->tnum, iDb);
+  65312.     VdbeComment((v, "%s", pTab->zName));
+
+sqlite3.c:67382: error: NULL_DEREFERENCE
+  pointer `pOp` last assigned on line 67380 could be null and is dereferenced at line 67382, column 9.
+  67380.       VdbeOp *pOp = sqlite3VdbeGetOp(v, i);
+  67381.       assert( pOp!=0 );
+  67382. >     if( pOp->opcode==OP_OpenRead && pOp->p3==iDb ){
+  67383.         Index *pIndex;
+  67384.         int tnum = pOp->p2;
+
+sqlite3.c:68005: error: DEAD_STORE
+  The value written to &regData (type int) is never used.
+  68003.       pParse->nMem++;
+  68004.     }
+  68005. >   regData = regRowid+1;
+  68006.   
+  68007.     /* Run the BEFORE and INSTEAD OF triggers, if there are any
+
+sqlite3.c:67998: error: DEAD_STORE
+  The value written to &regRecord (type int) is never used.
+  67996.     ** the content of the new row, and the assemblied row record.
+  67997.     */
+  67998. >   regRecord = ++pParse->nMem;
+  67999.     regRowid = regIns = pParse->nMem+1;
+  68000.     pParse->nMem += pTab->nCol + 1;
+
+sqlite3.c:67991: error: UNINITIALIZED_VALUE
+  The value read from dest.iParm was never initialized.
+  67989.       **      D: ...
+  67990.       */
+  67991. >     addrCont = sqlite3VdbeAddOp1(v, OP_Yield, dest.iParm);
+  67992.       addrInsTop = sqlite3VdbeAddOp1(v, OP_If, regEof);
+  67993.     }
+
+sqlite3.c:68611: error: NULL_DEREFERENCE
+  pointer `v` last assigned on line 68605 could be null and is dereferenced by call to `sqlite3VdbeAddOp2()` at line 68611, column 5.
+  68609.     for(i=nIdx-1; i>=0; i--){
+  68610.       if( aRegIdx[i]==0 ) continue;
+  68611. >     sqlite3VdbeAddOp2(v, OP_IdxInsert, baseCur+i+1, aRegIdx[i]);
+  68612.     }
+  68613.     regData = regRowid + 1;
+
+sqlite3.c:70285: error: NULL_DEREFERENCE
+  pointer `v` last assigned on line 70283 could be null and is dereferenced by call to `sqlite3VdbeAddOp2()` at line 70285, column 3.
+  70283.     Vdbe *v = sqlite3GetVdbe(pParse);
+  70284.     int mem = ++pParse->nMem;
+  70285. >   sqlite3VdbeAddOp2(v, OP_Integer, value, mem);
+  70286.     if( pParse->explain==0 ){
+  70287.       sqlite3VdbeSetNumCols(v, 1);
+
+sqlite3.c:71712: error: DEAD_STORE
+  The value written to &zMasterName (type char const *) is never used.
+  71710.     InitData initData;
+  71711.     char const *zMasterSchema;
+  71712. >   char const *zMasterName = SCHEMA_TABLE(iDb);
+  71713.   
+  71714.     /*
+
+sqlite3.c:71854: error: UNINITIALIZED_VALUE
+  The value read from meta.[_] was never initialized.
+  71852.   
+  71853.     if( pDb->pSchema->cache_size==0 ){
+  71854. >     size = meta[2];
+  71855.       if( size==0 ){ size = SQLITE_DEFAULT_CACHE_SIZE; }
+  71856.       if( size<0 ) size = -size;
+
+sqlite3.c:72167: error: UNINITIALIZED_VALUE
+  The value read from sParse.rc was never initialized.
+  72165.       *pzTail = sParse.zTail;
+  72166.     }
+  72167. >   rc = sParse.rc;
+  72168.   
+  72169.   #ifndef SQLITE_OMIT_EXPLAIN
+
+sqlite3.c:73867: error: NULL_DEREFERENCE
+  pointer `v` last assigned on line 73860 could be null and is dereferenced by call to `sqlite3VdbeAddOp2()` at line 73867, column 5.
+  73865.     if( dest.eDest==SRT_EphemTab ){
+  73866.       assert( p->pEList );
+  73867. >     sqlite3VdbeAddOp2(v, OP_OpenEphemeral, dest.iParm, p->pEList->nExpr);
+  73868.       dest.eDest = SRT_Table;
+  73869.     }
+
+sqlite3.c:76163: error: UNINITIALIZED_VALUE
+  The value read from sAggInfo.nColumn was never initialized.
+  76161.         sqlite3ExprAnalyzeAggregates(&sNC, pHaving);
+  76162.       }
+  76163. >     sAggInfo.nAccumulator = sAggInfo.nColumn;
+  76164.       for(i=0; i<sAggInfo.nFunc; i++){
+  76165.         sqlite3ExprAnalyzeAggList(&sNC, sAggInfo.aFunc[i].pExpr->pList);
+
+sqlite3.c:77332: error: NULL_DEREFERENCE
+  pointer `pTable` last assigned on line 77330 could be null and is dereferenced at line 77332, column 9.
+  77330.       Table *pTable = tableOfTrigger(pTrigger);
+  77331.       assert( pTable!=0 );
+  77332. >     if( pTable->pTrigger == pTrigger ){
+  77333.         pTable->pTrigger = pTrigger->pNext;
+  77334.       }else{
+
+sqlite3.c:82516: error: DEAD_STORE
+  The value written to &pLevel (type WhereLevel*) is never used.
+  82514.     notReady = ~(Bitmask)0;
+  82515.     pTabItem = pTabList->a;
+  82516. >   pLevel = pWInfo->a;
+  82517.     andFlags = ~0;
+  82518.     WHERETRACE(("*** Optimizer Start ***\n"));
+
+sqlite3.c:82423: error: DEAD_STORE
+  The value written to &pOrderBy (type ExprList*) is never used.
+  82421.   
+  82422.     if( ppOrderBy ){
+  82423. >     pOrderBy = *ppOrderBy;
+  82424.     }
+  82425.   
+
+sqlite3.c:82515: error: DEAD_STORE
+  The value written to &pTabItem (type SrcList_item*) is never used.
+  82513.     */
+  82514.     notReady = ~(Bitmask)0;
+  82515. >   pTabItem = pTabList->a;
+  82516.     pLevel = pWInfo->a;
+  82517.     andFlags = ~0;
+
+sqlite3.c:87160: error: DEAD_STORE
+  The value written to &rc (type int) is never used.
+  87158.     sqlite3_value *pVal;
+  87159.     char const *zSql8;
+  87160. >   int rc = SQLITE_NOMEM;
+  87161.   
+  87162.   #ifndef SQLITE_OMIT_AUTOINIT
+
+Summary of the reports
+
+  UNINITIALIZED_VALUE: 78
+           DEAD_STORE: 25
+     NULL_DEREFERENCE: 15
+          MEMORY_LEAK: 2
+        RESOURCE_LEAK: 1
