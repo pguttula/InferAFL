@@ -1,6 +1,6 @@
 69. [tool/lemon.c:3393](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/tool/lemon.c#L3393) - calloc could return null. Verified unlikely.
 
-70. [tool/lemon.c:3578](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/tool/lemon.c#L3578) - file handler named out is not never closed.
+<!--  70. [tool/lemon.c:3578](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/tool/lemon.c#L3578) - file handler named out is not never closed. -->
 
 79. [bld/sqlite3.c:37317](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L37317) - pPage pointer returned from sqlite3PagerGetExtra can
 be null. __Verified true__. This can happen because sqlite3PagerGetExtra can
@@ -9,7 +9,6 @@ malloc/calloc failure? Doesn't look like. Complex interprocedural dataflow that
 depends on the timing of the function calls.
 
 81. [bld/sqlite3.c:37440](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L37440) - pPage pointer returned from sqlite3PagerGetExtra can
-be null. Verified true (See 79).
 be null. __Verified true__ (See 79).
 
 82. [bld/sqlite3.c:44755](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L44755) - pVal couldbe null. Verified false; control moves away
