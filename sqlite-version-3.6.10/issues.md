@@ -3,13 +3,13 @@
 70. tool/lemon.c:3578 - file handler named out is not never closed.
 
 79. bld/sqlite3.c:37317 - pPage pointer returned from sqlite3PagerGetExtra can
-be null. Verified true. This can happen because sqlite3PagerGetExtra can
+be null. __Verified true__. This can happen because sqlite3PagerGetExtra can
 explicitly return 0 when pPg-\>pPager is null. But maybe this only happen due to
 malloc/calloc failure? Doesn't look like. Complex interprocedural dataflow that
-depends on the timing of function calls.
+depends on the timing of the function calls.
 
 81. bld/sqlite3.c:37440 - pPage pointer returned from sqlite3PagerGetExtra can
-be null. Verified true (See 79).
+be null. __Verified true__ (See 79).
 
 82. bld/sqlite3.c:44755 - pVal couldbe null. Verified false; control moves away
 from 44745 if pVal is null.
@@ -28,7 +28,7 @@ be null. Verified unlikely (see 98).
 be null. Verified unlikely (see 98).
 
 103. bld/sqlite3.c:64841 - Pointer `pColl2` last assigned on line 64840 could
-be null. Verified true. Possibly a real bug. pcoll2 is a result of calling
+be null. __Verified true__. Possibly a real bug. pcoll2 is a result of calling
 sqlite3FindCollSeq with last argument as 0. This inturn calls
 findCollSeqEntry with last arg as 0, which (as its documentation
 claims) can return Null if the last arg is 0.
@@ -53,7 +53,7 @@ line 73860 could be null and is dereferenced by call to
 `sqlite3VdbeAddOp2()`. Verified unlikely (see 98).
 
 116. sqlite3.c:77332 - Pointer `pTable` returned by tableOfTrigger on line
-77330 could be null.  Verified true. The pointer traces to the
+77330 could be null.  __Verified true__. The pointer traces to the
 function findElementGivenHash, which might return 0 if the element
 corresponding to the hash is not found. The call sequence is:
 tableOfTrigger -> sqlite3HashFind (in bld/tsrc/hash.c) ->
