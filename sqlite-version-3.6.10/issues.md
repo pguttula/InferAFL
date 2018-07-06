@@ -4,7 +4,7 @@
 
 79. bld/sqlite3.c:37317 - pPage pointer returned from sqlite3PagerGetExtra can
 be null. Verified true. This can happen because sqlite3PagerGetExtra can
-explicitly return 0 when pPg->pPager is null. But maybe this only happen due to
+explicitly return 0 when pPg-\>pPager is null. But maybe this only happen due to
 malloc/calloc failure? Doesn't look like. Complex interprocedural dataflow that
 depends on the timing of function calls.
 
@@ -14,17 +14,17 @@ be null. Verified true (See 79).
 82. bld/sqlite3.c:44755 - pVal couldbe null. Verified false; control moves away
 from 44745 if pVal is null.
 
-98. bld/sqlite3.c:58757 - pParse->pVdbe returned from sqlite3GetVdbe on line
+98. bld/sqlite3.c:58757 - pParse-\>pVdbe returned from sqlite3GetVdbe on line
 58749 could ne null. Verified unlikely. The pointer traces its origin to a malloc
 call. Call stack is sqlite3GetVdbe -> sqlite3VdbeCreate -> sqlite3DBMallocZero.
 
-99. bld/sqlite3.c:58751 - Pointer v, which is an alias to pParse->pVdbe
+99. bld/sqlite3.c:58751 - Pointer v, which is an alias to pParse-\>pVdbe
 returned from sqlite3GetVdbe on line 58749 could ne null. Verified unlikely (see 98).
 
-101. bld/sqlite3.c:61788 - Pointer v, which is an alias to pParse->pVdbe, can
+101. bld/sqlite3.c:61788 - Pointer v, which is an alias to pParse-\>pVdbe, can
 be null. Verified unlikely (see 98).
 
-102. bld/sqlite3.c:63048 - Pointer v, which is an alias to pParse->pVdbe, can
+102. bld/sqlite3.c:63048 - Pointer v, which is an alias to pParse-\>pVdbe, can
 be null. Verified unlikely (see 98).
 
 103. bld/sqlite3.c:64841 - Pointer `pColl2` last assigned on line 64840 could
