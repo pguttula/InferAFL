@@ -1,58 +1,58 @@
-69. tool/lemon.c:3393 - calloc could return null. Verified unlikely.
+69. [tool/lemon.c:3393](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/tool/lemon.c#L3393) - calloc could return null. Verified unlikely.
 
-70. tool/lemon.c:3578 - file handler named out is not never closed.
+70. [tool/lemon.c:3578](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/tool/lemon.c#L3578) - file handler named out is not never closed.
 
-79. bld/sqlite3.c:37317 - pPage pointer returned from sqlite3PagerGetExtra can
+79. [bld/sqlite3.c:37317](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L37317) - pPage pointer returned from sqlite3PagerGetExtra can
 be null. Verified true. This can happen because sqlite3PagerGetExtra can
 explicitly return 0 when pPg-\>pPager is null. But maybe this only happen due to
 malloc/calloc failure? Doesn't look like. Complex interprocedural dataflow that
 depends on the timing of function calls.
 
-81. bld/sqlite3.c:37440 - pPage pointer returned from sqlite3PagerGetExtra can
+81. [bld/sqlite3.c:37440](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L37440) - pPage pointer returned from sqlite3PagerGetExtra can
 be null. Verified true (See 79).
 
-82. bld/sqlite3.c:44755 - pVal couldbe null. Verified false; control moves away
+82. [bld/sqlite3.c:44755](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L44755) - pVal couldbe null. Verified false; control moves away
 from 44745 if pVal is null.
 
-98. bld/sqlite3.c:58757 - pParse-\>pVdbe returned from sqlite3GetVdbe on line
+98. [bld/sqlite3.c:58757](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L58757) - pParse-\>pVdbe returned from sqlite3GetVdbe on line
 58749 could ne null. Verified unlikely. The pointer traces its origin to a malloc
 call. Call stack is sqlite3GetVdbe -> sqlite3VdbeCreate -> sqlite3DBMallocZero.
 
-99. bld/sqlite3.c:58751 - Pointer v, which is an alias to pParse-\>pVdbe
+99. [bld/sqlite3.c:58751](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L58751) - Pointer v, which is an alias to pParse-\>pVdbe
 returned from sqlite3GetVdbe on line 58749 could ne null. Verified unlikely (see 98).
 
-101. bld/sqlite3.c:61788 - Pointer v, which is an alias to pParse-\>pVdbe, can
+101. [bld/sqlite3.c:61788](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L61788) - Pointer v, which is an alias to pParse-\>pVdbe, can
 be null. Verified unlikely (see 98).
 
-102. bld/sqlite3.c:63048 - Pointer v, which is an alias to pParse-\>pVdbe, can
+102. [bld/sqlite3.c:63048](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L63048) - Pointer v, which is an alias to pParse-\>pVdbe, can
 be null. Verified unlikely (see 98).
 
-103. bld/sqlite3.c:64841 - Pointer `pColl2` last assigned on line 64840 could
+103. [bld/sqlite3.c:64841](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L64841) - Pointer `pColl2` last assigned on line 64840 could
 be null. Verified true. Possibly a real bug. pcoll2 is a result of calling
 sqlite3FindCollSeq with last argument as 0. This inturn calls
 findCollSeqEntry with last arg as 0, which (as its documentation
 claims) can return Null if the last arg is 0.
 
-104. bld/sqlite3.c:65310 - Pointer `v`, returned from sqlite3GetVdbe
+104. [bld/sqlite3.c:65310](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L65310) - Pointer `v`, returned from sqlite3GetVdbe
 on line 65307 could be null. Verified unlikely (see 98).
 
-105. bld/sqlite3.c:67382 - Pointer `pOp` returned from sqlite3VdbeGetOp on line
+105. [bld/sqlite3.c:67382](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L67382) - Pointer `pOp` returned from sqlite3VdbeGetOp on line
 67380 could be null. Verified false. The assert statement on previous line
 prevents the control from coming here if pOp is null.
 
-109. bld/sqlite3.c:68611 - Pointer `v` returned from sqlite3GetVdbe on line
+109. [bld/sqlite3.c:68611](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L68611) - Pointer `v` returned from sqlite3GetVdbe on line
 68605 could be null and is dereferenced by call to `sqlite3VdbeAddOp2()`.
 Verified false. Assert statement on 68606 prevents this.
 
-110. sqlite3.c:70285 - Pointer `v` returned from sqlite3GetVdbe on line 70283
+110. [bld/sqlite3.c:70285](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L70285) - Pointer `v` returned from sqlite3GetVdbe on line 70283
 could be null and is dereferenced by call to `sqlite3VdbeAddOp2()`. Verified
 unlikely (see 98).
 
-114. sqlite3.c:73867 - Pointer `v` returned from sqlite3GetVdbe on
+114. [bld/sqlite3.c:73867](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L73867) - Pointer `v` returned from sqlite3GetVdbe on
 line 73860 could be null and is dereferenced by call to
 `sqlite3VdbeAddOp2()`. Verified unlikely (see 98).
 
-116. sqlite3.c:77332 - Pointer `pTable` returned by tableOfTrigger on line
+116. [bld/sqlite3.c:77332](https://github.com/pguttula/InferAFL/blob/master/sqlite-version-3.6.10/bld/sqlite3.c#L77332) - Pointer `pTable` returned by tableOfTrigger on line
 77330 could be null.  Verified true. The pointer traces to the
 function findElementGivenHash, which might return 0 if the element
 corresponding to the hash is not found. The call sequence is:
