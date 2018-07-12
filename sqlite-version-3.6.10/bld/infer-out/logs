@@ -2548,3 +2548,43 @@ Infer version v0.14.0
 [9565][ extern err] **   /home/osboxes/infer/infer-linux64-v0.14.0/infer/bin/../lib/python/inferTraceBugs -o /home/osboxes/experiments/sqlite-version-3.6.10/bld/infer-out
 [9565][ extern err] ** See error above
 [9565][environment] Infer log identifier is 
+
+[2233][      phase] ============================================================
+[2233][      phase] = New infer execution begins
+[2233][      phase] ============================================================
+[2233][environment] CWD = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[2233][environment] No .inferconfig file found
+[2233][environment] Project root = /home/osboxes/experiments/sqlite-version-3.6.10/bld
+[2233][environment] INFER_ARGS =   @/tmp/args.tmp.2b7991
+[2233][environment]   ++Contents of '/tmp/args.tmp.2b7991':
+[2233][environment]     -g -O2 -DSQLITE_OS_UNIX=1 -I. -I../src -D_HAVE_SQLITE_CONFIG_H -DNDEBUG
+[2233][environment]     -DSQLITE_THREADSAFE=1 -DSQLITE_THREAD_OVERRIDE_LOCK=-1
+[2233][environment]     -DSQLITE_OMIT_LOAD_EXTENSION=1 -DHAVE_READLINE=0 -o
+[2233][environment]     /home/osboxes/experiments/sqlite-version-3.6.10/bld/.libs/2218-lt-sqlite3
+[2233][environment]     ../src/shell.c ./.libs/libsqlite3.so -lpthread -Wl,-rpath
+[2233][environment]     -Wl,/home/osboxes/experiments/sqlite-version-3.6.10/bld/.libs -Wl,-rpath
+[2233][environment]     -Wl,/usr/local/lib
+[2233][environment]   
+[2233][environment] command line arguments:   gcc -g -O2 -DSQLITE_OS_UNIX=1 -I. -I../src
+[2233][environment]                           -D_HAVE_SQLITE_CONFIG_H -DNDEBUG
+[2233][environment]                           -DSQLITE_THREADSAFE=1
+[2233][environment]                           -DSQLITE_THREAD_OVERRIDE_LOCK=-1
+[2233][environment]                           -DSQLITE_OMIT_LOAD_EXTENSION=1 -DHAVE_READLINE=0 -o
+[2233][environment]                           /home/osboxes/experiments/sqlite-version-3.6.10/bld/.libs/2218-lt-sqlite3
+[2233][environment]                           ../src/shell.c ./.libs/libsqlite3.so -lpthread
+[2233][environment]                           -Wl,-rpath
+[2233][environment]                           -Wl,/home/osboxes/experiments/sqlite-version-3.6.10/bld/.libs
+[2233][environment]                           -Wl,-rpath -Wl,/usr/local/lib
+[2233][environment] Analyzer: checkers
+[2233][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), ownership (C/C++/ObjC), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC)
+[2233][environment] Infer log identifier is 
+Infer version v0.14.0
+[2233][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[2233][environment] 
+[2233][   progress] Capturing in make/cc mode...
+[2233][      debug] 
+[2233][      debug] *** Beginning capture of file /home/osboxes/experiments/sqlite-version-3.6.10/src/shell.c ***
+[2233][      debug] Clang frontend action is translating and linting
+[2233][      debug] Loading the following linters files: /home/osboxes/infer/infer-linux64-v0.14.0/infer/bin/../lib/linter_rules/linters.al
+[2233][      debug] Elapsed: 423ms.
+[2233][      debug] 

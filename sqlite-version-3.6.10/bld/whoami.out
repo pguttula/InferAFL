@@ -1,0 +1,14 @@
+fprintf():
+    who_am_i() <int who_am_i () at whoami.c:8>:
+        main() <int main () at whoami.c:26>
+    main() <int main () at whoami.c:26> [see 3]
+getenv():
+    who_am_i() <int who_am_i () at whoami.c:8>: [see 2]
+geteuid():
+    who_am_i() <int who_am_i () at whoami.c:8>: [see 2]
+getpwuid():
+    who_am_i() <int who_am_i () at whoami.c:8>: [see 2]
+main() <int main () at whoami.c:26> [see 3]
+printf():
+    who_am_i() <int who_am_i () at whoami.c:8>: [see 2]
+who_am_i() <int who_am_i () at whoami.c:8>: [see 2]

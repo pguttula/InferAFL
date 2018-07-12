@@ -247,6 +247,7 @@ SRC = \
   $(TOP)/src/select.c \
   $(TOP)/src/status.c \
   $(TOP)/src/shell.c \
+  $(TOP)/bld/afl-test.c \
   $(TOP)/src/sqlite.h.in \
   $(TOP)/src/sqlite3ext.h \
   $(TOP)/src/sqliteInt.h \
@@ -438,7 +439,7 @@ TESTFIXTURE_SRC = $(TESTSRC) $(TOP)/src/tclsqlite.c $(TESTFIXTURE_SRC$(USE_AMALG
 # This is the default Makefile target.  The objects listed here
 # are what get build when you type just "make" with no arguments.
 #
-all:	sqlite3.h libsqlite3.la sqlite3$(TEXE) $(HAVE_TCL:1=libtclsqlite3.la)
+all:	sqlite3.h libsqlite3.la sqlite3$(TEXE) afl-test$(TEXE) $(HAVE_TCL:1=libtclsqlite3.la)
 
 Makefile: $(TOP)/Makefile.in
 	./config.status
@@ -463,6 +464,11 @@ libtclsqlite3.la:	tclsqlite.lo libsqlite3.la
 sqlite3$(TEXE):	$(TOP)/src/shell.c libsqlite3.la sqlite3.h
 	$(LTLINK) $(READLINE_FLAGS) \
 		-o $@ $(TOP)/src/shell.c libsqlite3.la \
+		$(LIBREADLINE) $(TLIBS) -rpath "$(libdir)"
+
+afl-test$(TEXE):$(TOP)/bld/afl-test.c libsqlite3.la sqlite3.h
+	$(LTLINK) $(READLINE_FLAGS) \
+		-o $@ $(TOP)/bld/afl-test.c libsqlite3.la \
 		$(LIBREADLINE) $(TLIBS) -rpath "$(libdir)"
 
 # This target creates a directory named "tsrc" and fills it with

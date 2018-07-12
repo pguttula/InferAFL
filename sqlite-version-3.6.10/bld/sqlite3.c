@@ -17,7 +17,7 @@
 ** is also in a separate file.  This file contains only code for the core
 ** SQLite library.
 **
-** This amalgamation was generated on 2018-07-04 21:33:38 UTC.
+** This amalgamation was generated on 2018-07-12 01:12:34 UTC.
 */
 #define SQLITE_CORE 1
 #define SQLITE_AMALGAMATION 1
