@@ -20,13 +20,14 @@ TOP = ..
 # C Compiler and options for use in building executables that
 # will run on the platform that is doing the build.
 #
-BCC = gcc  -g -O2
+
+BCC = afl-clang  -g -O2
 
 # C Compile and options for use in building executables that 
 # will run on the target platform.  (BCC and TCC are usually the
 # same unless your are cross-compiling.)
 #
-TCC = gcc   -g -O2 -DSQLITE_OS_UNIX=1 -I. -I${TOP}/src
+TCC = afl-clang   -g -O2 -DSQLITE_OS_UNIX=1 -I. -I${TOP}/src
 
 # Define this for the autoconf-based build, so that the code knows it can
 # include the generated config.h
